@@ -15,7 +15,7 @@ body{
 
 .header {
     height: 200px;
-    border-bottom: rgb(241, 186, 58) solid;
+    border-bottom: #FC4F9A solid;
     width: 100%;
 }
 
@@ -26,16 +26,15 @@ body{
     color: white;
     padding: 16px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 8px 10px;
-    transition-duration: 0.4s
 }
 
 .mainBody {
     background-color: rgb(209, 209, 169);
     width: 100%;
+    padding-top: 1%;
 }
 
 .mainBody-inner{
@@ -46,7 +45,7 @@ body{
 .mainBody-left{
     background-color: white;
     width: 35%;
-    border-radius: 5px;
+    border-radius: 5%;
     margin-left: 5%;
     margin-bottom: 5%;
     padding: 10px 0;
@@ -56,6 +55,7 @@ body{
     font-family: "Satisfy - Regular", cursive;
     text-align: center;
     font-size: 100px;
+    margin-right: 20%;
 }
 
 .foto-animales-contenedor{
@@ -70,18 +70,38 @@ body{
 .description-text {
     font-family: "Delius - Regular", cursive;
     font-weight: normal;
-    font-size: 17px;
+    font-size: 20px;
     margin-left: 5%;
 }
 
 .form {
     font-family: "Delius - Regular", cursive;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 5%;
     margin-right: 4%;
     width: 20%;
+    height: 650px;
+    text-align: center;
 }
 
 .footer {
-    background-color: lightgreen;
+    background-color: white;
+    border-top: #FC4F9A solid;
+    font-family: "Delius - Regular", cursive;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-footer{
+    text-align: left;
+    padding: 16px 35px;
+    margin: 2.5px;
+}
+
+.right-footer{
+    text-align: right;
+    padding: 16px 35px;
+    margin-top: 1%;
 }
