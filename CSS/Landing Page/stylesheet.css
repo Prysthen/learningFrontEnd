@@ -1,18 +1,87 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
 @font-face {
-    font-family:"Satisfy - Regular";
+    font-family: "Satisfy - Regular";
     src: url(Fonts/Satisfy-Regular.ttf);
 }
-@font-face{
+
+@font-face {
     font-family: "Delius - Regular";
     src: url(Fonts/Delius-Regular.ttf);
 }
-.header{width: 90%; height: 200px; border-top: transparent; border-left: transparent; border-right: transparent; 
-border-bottom: rgb(241, 186, 58); border-style: solid; width: 100%;}
 
-.mainBody{background-color: white}
-h1{font-family: "Satisfy - Regular", cursive;  text-align: left; padding: 100px; margin-left: 46%; scale: 300%; margin-top: 0%;}
-.buttons{background-color: #FC4F9A; font-family: "Delius - Regular", cursive; border-radius: 5%; color: white; padding: 16px 32px; 
-text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 8px 10px; transition-duration: 0.4s}
-.h3{font-family: "Delius - Regular", cursive; font-weight: normal;  scale: 110%; margin-left: 5%; margin-right: 70%; text-align: justify;}
+.header {
+    height: 200px;
+    border-bottom: rgb(241, 186, 58) solid;
+    width: 100%;
+}
 
-.footer{background-color: lightgreen}
+.buttons {
+    background-color: #FC4F9A;
+    font-family: "Delius - Regular", cursive;
+    border-radius: 5%;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 10px;
+    transition-duration: 0.4s
+}
+
+.mainBody {
+    background-color: rgb(209, 209, 169);
+    width: 100%;
+}
+
+.mainBody-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainBody-left{
+    background-color: white;
+    width: 35%;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 10px 0;
+}
+
+.titulo {
+    font-family: "Satisfy - Regular", cursive;
+    text-align: center;
+    font-size: 100px;
+}
+
+.foto-animales-contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.foto-animales{
+    display: block;
+}
+
+.description-text {
+    font-family: "Delius - Regular", cursive;
+    font-weight: normal;
+    font-size: 17px;
+    margin-left: 5%;
+}
+
+.form {
+    font-family: "Delius - Regular", cursive;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 4%;
+    width: 20%;
+}
+
+.footer {
+    background-color: lightgreen;
+}
