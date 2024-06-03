@@ -12,6 +12,8 @@
         .link a:link{color: rgb(99, 99, 255); font-size: 30px;}
         .visited a:visited{color: rgb(123, 219, 123)}
         .hover a:hover{color: rgb(247, 131, 131); font-size: 30px;} /* El tamaño de fuente solo le afecta cuando el raton esta encima*/
+        .focus input:focus{color: rgb(135, 0, 197)}
+        .active p:active{color: rgb(255, 140, 0);}
     </style>
 
     </head>
@@ -21,6 +23,7 @@
             <h1>Resumen de la teoría del libro</h1>
         </div>
         <div class="main-body">
+
             <div class="elementos-pseudoelementos">
                 <h4>Utilización de elementos y pseudoelementos</h4>
                 <div class="first-line">
@@ -36,6 +39,7 @@
                     <p>After añade al final del texto: Por ejemplo:</p>
                 </div>
             </div>
+
             <div class="clases-pseudoclases">
                 <div class="link">
                     <a href="index.html"><b>link a este mismo documento</b></a>
@@ -47,6 +51,16 @@
                     <a href="index.html">hover, afecta el puntero del ratón.</a>
                 </div>
                 <div class="focus">
+                    <form>
+                        Escribe tu nombre aquí: <input type="text" name="first-name">
+                        <br>
+                        Escribe tu comida favorita: <input type="text" name="favorite-food">
+                    </form>
+                </div>
+                <div class="active">
+                    <p><u>¡Hazme click!</u></p>
+                </div>
+                <div class="target">
                     
                 </div>
             </div>
