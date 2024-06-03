@@ -3,9 +3,15 @@
     <head>
     <meta charset="utf-8">
     <title>Resumen de la teoría del libro</title>
-    <!--Meter style aqui-->
+    <!--Meter style aqui (internal css)-->
     <style>
-        .first-line p::first-line{font-size: 100px}
+        .first-line p::first-line{font-size: 40px; color: rgb(94, 175, 255);}
+        .first-letter p::first-letter{color: rgb(111, 185, 54); font-size: 40px}
+        .before p::before{content: '¡Atención! '; font-size: 40px; color: rgb(188, 90, 180);}
+        .after p::after{content: ' esto'; color: rgb(210, 142, 16); font-size: 40px;}
+        .link a:link{color: rgb(99, 99, 255); font-size: 30px;}
+        .visited a:visited{color: rgb(123, 219, 123)}
+        .hover a:hover{color: rgb(247, 131, 131); font-size: 30px;} /* El tamaño de fuente solo le afecta cuando el raton esta encima*/
     </style>
 
     </head>
@@ -20,7 +26,29 @@
                 <div class="first-line">
                     <p>First line, <br> sería así.</p>
                 </div>
-
+                <div class="first-letter">
+                    <p>First letter afecta de esta manera.</p>
+                </div>
+                <div class="before">
+                    <p>Before funciona así.</p>
+                </div>
+                <div class="after">
+                    <p>After añade al final del texto: Por ejemplo:</p>
+                </div>
+            </div>
+            <div class="clases-pseudoclases">
+                <div class="link">
+                    <a href="index.html"><b>link a este mismo documento</b></a>
+                </div>
+                <div class="visited" style="font-size: 30px;">
+                    <a href="index.html">Enlace visitado</a>
+                </div>
+                <div class="hover">
+                    <a href="index.html">hover, afecta el puntero del ratón.</a>
+                </div>
+                <div class="focus">
+                    
+                </div>
             </div>
         </div>
 
