@@ -25,6 +25,9 @@
         .numero-esimo-final :nth-last-of-type(2){background-color: rgb(239, 167, 190);}/*Empieza por el numero indicado por atras*/
         .first-of-type p:first-of-type{font-size: 20px; font-weight: bold;}  /*tambien está el last-of-type*/
         .requerido input:required{border: 8px dotted rgb(0, 255, 0);}
+        .invalido input:invalid{border:5px solid red}
+        .imagen-fondo{background-image: url(images/Foto.png);background-attachment:scroll;} /*Imagen de fondo*/
+
 
     </style>
 
@@ -125,9 +128,24 @@
                         <input required type="text">
                     </form>
                 </div>
+                <div class="invalido">
+                    <form>
+                        <p>se pinta de un color si le metos un caracter no indicado - invalido:</p>
+                        <input type="number">
+                    </form>
+                </div>
+                <!-- :not selector te sirve para indicar con una regla lo que afecta a todo lo no selector-->
+            </div>
+
+            <div class="Atributos-de-estilo">
+                <div class="imagen-fondo">
+                    <img src="images/Foto.png">
+                </div>
                 <div>
 
                 </div>
+
+
             </div>
         </div>
 
