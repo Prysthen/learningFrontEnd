@@ -21,8 +21,10 @@
         .enabled input:enabled{border: 3px dashed rgb(0, 255, 34)}
         .disabled input.disabled{background: rgb(103, 103, 103)}
         .checked input:checked{margin: 40px; color:rgb(187, 28, 121)}
-        .root :root{background: url('images/Foto.png')}
-
+        .numero-esimo :nth-of-type(2){font-size:15px; background-color: rgb(0, 191, 191);} /*Le decimos que el afecte a la 2a unidad*/
+        .numero-esimo-final :nth-last-of-type(2){background-color: rgb(239, 167, 190);}/*Empieza por el numero indicado por atras*/
+        .first-of-type p:first-of-type{font-size: 20px; font-weight: bold;}  /*tambien está el last-of-type*/
+        .requerido input:required{border: 8px dotted rgb(0, 255, 0);}
 
     </style>
 
@@ -99,9 +101,32 @@
                         Quiero recibir correos
                     </form>
                 </div>
-                <div class="root">
-                    <img src="images/Foto.png" alt="Imagen de un mdoelo 3d">
-                    <p>Hola, ese modelo de una barricada ha sido hecho por mí en Blender.</p>
+                <div class="numero-esimo">
+                    <p>uno</p>
+                    <p>dos</p>
+                    <p>tres</p>
+                </div>
+                <div class="numero-esimo-final">
+                    <p>pikachu</p>
+                    <p>snorlax</p>
+                    <p>charizard</p>
+                    <p>chikorita</p>
+                    <p>sylveon</p>
+                </div>
+                <div class="first-of-type">
+                    <p>bulbasur</p>
+                    <p>ludicolo</p>
+                    <p>staravia</p>
+                    <p>articuno</p>
+                </div>
+                <div class="requerido">
+                    <form>
+                        <p>se requiere rellenar este cuadro:</p>
+                        <input required type="text">
+                    </form>
+                </div>
+                <div>
+
                 </div>
             </div>
         </div>
