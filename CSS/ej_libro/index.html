@@ -27,6 +27,11 @@
         .requerido input:required{border: 8px dotted rgb(0, 255, 0);}
         .invalido input:invalid{border:5px solid red}
         .imagen-fondo{background-image: url(images/Foto.png);background-attachment:scroll;} /*Imagen de fondo*/
+        .texto{text-align: right; text-decoration-style: dotted; font-size: 60px; text-decoration: line-through; text-shadow: 10px -9px 4px aqua;}
+        .tablas td, .tablas th{border: 2px solid #c664ff; padding: 10px;}
+        .tablas tr:hover {background-color: rgb(196, 151, 237);}
+        .tablas tr:nth-child(even){background-color: #f8e1ff;}
+        .tablas th{text-align: left;}
 
 
     </style>
@@ -40,31 +45,39 @@
         <div class="main-body">
 
             <div class="elementos-pseudoelementos">
-                <h4>Utilización de elementos y pseudoelementos</h4>
+                <h2>Utilización de elementos y pseudoelementos:</h2>
                 <div class="first-line">
                     <p>First line, <br> sería así.</p>
                 </div>
+                <hr>
                 <div class="first-letter">
                     <p>First letter afecta de esta manera.</p>
                 </div>
+                <hr>
                 <div class="before">
                     <p>Before funciona así.</p>
                 </div>
+                <hr>
                 <div class="after">
                     <p>After añade al final del texto: Por ejemplo:</p>
                 </div>
+                <hr> <br>
             </div>
 
             <div class="clases-pseudoclases">
+                <h2>Uso de clases y pseudoclases:</h2> <!--Pagina 35-->
                 <div class="link">
                     <a href="index.html"><b>link a este mismo documento</b></a>
                 </div>
+                <hr>
                 <div class="visited" style="font-size: 30px;">
                     <a href="index.html">Enlace visitado</a>
                 </div>
+                <hr>
                 <div class="hover">
                     <a href="index.html">hover, afecta el puntero del ratón.</a>
                 </div>
+                <hr>
                 <div class="focus">
                     <form>
                         Escribe tu nombre aquí: <input type="text" name="first-name">
@@ -72,31 +85,38 @@
                         Escribe tu comida favorita: <input type="text" name="favorite-food">
                     </form>
                 </div>
+                <hr>
                 <div class="active">
                     <p><u>¡Hazme click!</u></p>
                 </div>
+                <hr>
                 <div class="first-child">
                     <p>primer hijo es asi (se pintade color)</p>
                     <p>aunque a este no le afecte estando en el mismo div</p>
                 </div>
+                <hr>
                 <div class="last-child">
                     <p>¿le afecta a este parrafo? pues no.</p>
                     <p>¿y a este poer ser el último? pues si.</p>
                 </div>
+                <hr>
                 <div class="lang">
                     <p lang="Arrócoli">Arrócoli.</p>
                     <p>¿qué es eso? eso es comida de lora.</p>
                 </div>
+                <hr>
                 <div class="enabled"> <!--suele ser para formularios-->
                     <form>
                         Pokemon favorito: <input type="text">
                     </form>
                 </div>
+                <hr>
                 <div class="disabled"> <!--Suele ser para formularios-->
                     <form>
                         Videojuego favorito: <input type="text" disabled="disabled">
                     </form>
                 </div>
+                <hr>
                 <div class="checked">
                     <form>
                         <input type="radio" checked="checked" value="masculino" name="genero">Niño <br>
@@ -104,11 +124,13 @@
                         Quiero recibir correos
                     </form>
                 </div>
+                <hr>
                 <div class="numero-esimo">
                     <p>uno</p>
                     <p>dos</p>
                     <p>tres</p>
                 </div>
+                <hr>
                 <div class="numero-esimo-final">
                     <p>pikachu</p>
                     <p>snorlax</p>
@@ -116,18 +138,21 @@
                     <p>chikorita</p>
                     <p>sylveon</p>
                 </div>
+                <hr>
                 <div class="first-of-type">
                     <p>bulbasur</p>
                     <p>ludicolo</p>
                     <p>staravia</p>
                     <p>articuno</p>
                 </div>
+                <hr>
                 <div class="requerido">
                     <form>
                         <p>se requiere rellenar este cuadro:</p>
                         <input required type="text">
                     </form>
                 </div>
+                <hr>
                 <div class="invalido">
                     <form>
                         <p>se pinta de un color si le metes un caracter no indicado - invalido:</p>
@@ -135,17 +160,42 @@
                     </form>
                 </div>
                 <!-- :not selector te sirve para indicar con una regla lo que afecta a todo lo no selector-->
+                <hr style="height: 5px;"> <br>
             </div>
 
             <div class="Atributos-de-estilo">
+                <h2>Atributos de estilos, fuetnes, color, fondo...:</h2> <!--Pagina 73-->
                 <div class="imagen-fondo">
                     <img src="images/Foto.png">
                 </div>
-                <div>
-                    <!-- pg 80/81-->
+                <hr>
+                <div class="texto">
+                    <p>Esto es un ejemplo de lo que se puede hacer con el texto.</p>
                 </div>
+                <hr>
+            </div>
 
-
+            <div class="Tablas-y-listas">
+                <div class="tablas">
+                    <table>
+                        <tr>
+                            <th>Nombre del Pokemon</th>
+                            <th>Tipo</th>
+                        </tr>
+                        <tr>
+                            <td>Pichu</td>
+                            <td>Electrico</td>
+                        </tr>
+                        <tr>
+                            <td>Oddish</td>
+                            <td>Planta-Veneno</td>
+                        </tr>
+                        <tr>
+                            <td>Geodude</td>
+                            <td>Roca</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
 
