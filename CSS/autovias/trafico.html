@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="esp">
+  <head>
+    <meta charset="UTF-8">
+    <title>Seguridad Vial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+    <style>
+      .menu,h1{
+        margin: 1%;
+        text-align: center;
+      }
+      .contenido{
+        margin: 1%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title is-1">Seguridad Vial</h1> 
+    <div class="menu"> <!-- div que engloba todo el menu -->
+      <div class="dropdown is-hoverable"> <!-- casilla que despliegará sus opciones al pasar por encima de ella -->
+        <div class="dropdown-trigger"> <!-- contenedor para el boton de 'Autovía' -->
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu"> <!-- importante que el valor de aria-controls sea igual al id del menu -->
+            <span>Autovía</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu"> <!-- menu que se desplegará al pasar por encima de 'Autovía' -->
+          <div class="dropdown-content">
+            <a href="#tipo1" class="dropdown-item"> Señales de advertencia de peligro </a>
+            <hr class="dropdown-divider" />
+            <a href="#tipo2" class="dropdown-item"> Señales de prioridad </a>
+            <hr class="dropdown-divider" />
+            <a href="#tipo3" class="dropdown-item"> Señales de prohibición de entrada </a>
+            <hr class="dropdown-divider" />
+            <a href="#tipo4" class="dropdown-item"> Señales de restricción de paso </a>
+            <hr class="dropdown-divider" />
+            <a href="#tipo5" class="dropdown-item"> Señales de prohibición o restricción </a>
+            <hr class="dropdown-divider" />
+            <a href="#tipo6" class="dropdown-item"> Señales de obligación </a>
+            <hr class="dropdown-divider" />
+            <a href="#tipo7" class="dropdown-item"> Señales de fin de prohibición o restricción </a>
+            <hr class="dropdown-divider" />
+            <a href="#tipo8" class="dropdown-item"> Señales de indicaciones generales </a>
+            <hr class="dropdown-divider" />
+            <a href="#tipo9" class="dropdown-item"> Señales de servicios </a>
+            <hr class="dropdown-divider" />
+            <a href="#tipo10" class="dropdown-item"> Señales de obras </a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown"> 
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+            <span>Ciudad</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+            <span>Patinetes</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="contenido">
+      <h2 class="title is-2">Tipos de señales</h2>
+      <div>
+        <h3 class="title is-3" id="tipo1">Señales de advertencia de peligro</h3>
+        <h5 class="subtitle">Las señales de advertencia de peligro indican la proximidad y la naturaleza de un peligro difícil de ser percibido a tiempo, para que podamos actuar de forma adecuada. Su forma exterior es casi siempre un triángulo equilátero con fondo blanco y borde rojo.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="tipo2">Señales de prioridad</h3>
+        <h5 class="subtitle">Las señales de prioridad son las que obligan a ceder el paso a otros vehículos. Debido a su importancia, tienen formas diferentes a todas las demás señales.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="tipo3">Señales de prohibición de entrada</h3>
+        <h5 class="subtitle">Las señales de prohibición de entrada son las que restringen el acceso a una vía. Son circulares y de color blanco con un borde rojo, salvo la de entrada prohibida, que por su importancia, es de fondo rojo con una franja blanca.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="tipo4">Señales de restricción de paso</h3>
+        <h5 class="subtitle">Las señales de restricción de paso prohíben o limitan el acceso de los vehículos a partir del lugar en que están situadas.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="tipo5">Señales de prohibición o restricción</h3>
+        <h5 class="subtitle">Las señales de prohibición son aquellas que prohíben comportamientos que puedan provocar peligro. Tienen forma circular y son negras sobre fondo blanco, con bordes y banda de color rojo.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="tipo6">Señales de obligación</h3>
+        <h5 class="subtitle">Son aquellas que señalan una norma de circulación obligatoria.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="tipo7">Señales de fin de prohibición o restricción</h3>
+        <h5 class="subtitle">Las señales de fin de prohibición o restricción son aquellas que informan de que el tramo de prohibición o de limitación ha terminado. Son redondas y de color blanco con una o varias líneas negras en diagonal.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="tipo8">Señales de indicaciones generales</h3>
+        <h5 class="subtitle">Las señales de indicación general facilitan información que puede ser de utilidad.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="tipo9">Señales de servicios</h3>
+        <h5 class="subtitle">Las señales turísticas y de servicios informan de la existencia de un servicio o un lugar de interés turístico y/o recreativo.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="tipo10">Señales de obras</h3>
+        <h5 class="subtitle">Las señales de tráfico de obras son señales similares al resto, con fondo amarillo, utilizadas para señalizar desvíos o cambios provisionales debido a obras. Pueden ser de varios tipos:</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+    </div>
+  </body>
+</html>
