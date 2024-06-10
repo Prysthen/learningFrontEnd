@@ -1,0 +1,5 @@
+Paleta:
+
+Main color: #F5F5DC
+Secondary color: #DCEAF5
+Contrast Color: #F5DDDC
