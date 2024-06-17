@@ -2,4 +2,4 @@ Paleta:
 
 Background color: #F5F5DC
 Cuadrito color: #DCEAF5
-Text Color: #F5DDDC
+Text Color: #2F5875
