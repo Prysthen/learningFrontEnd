@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <style>
+    body {
+        background: #F5F5DC;
+        width: 100%;
+        height: 100%;
+    }
+    .container .section .columns .column h1 {
+        font-size: 60px;
+    }
+    .box-menu {
+        text-align: center;
+        padding-top: 30px;
+    }
+    .button{
+        background-color: #f5f5dc;
+        box-shadow: none !important;
+        border: #f5f5dc;
+    }
+    .button:hover{
+        background-color: #2f5875;
+        span p {
+            color: #DCEAF5;
+        }
+    }
+    .dropdown-item a {
+        background: #DCEAF5;
+    }
+    .contenido{
+        margin: 1%;
+    }
+    .contacto {
+        filter: invert(1);
+        margin: 10px auto;
+    }
+    .card-image figure img {
+        height: 200px;
+    }
+    .borde {
+        background: #DCEAF5;
+        color: #2F5875;
+        font-size: larger;
+        padding: 15px;
+        text-align: center;
+        height: 150px;
+        border: 2px solid #2F5875;
+        border-radius: 10px;
+    }
+    .title {
+        color: #2F5875;
+        margin: 10px;
+        text-align: center;
+    }
+    .nombre {
+        height: 65px;
+    }
+    .footer {
+        background: #2F5875;
+    }
+    .footer div h6 {
+        color: #DCEAF5;
+    }
+    .footer div a {
+        color: #DCEAF5;
+    }
+    footer {
+        background: #DCEAF5;
+    }
+    footer #copy p {
+        color: #2F5875;
+    }
+    </style>
+  </head>
+  <body>	
+    <div class="columns box-menu">
+      <div class="column is-4">
+         <div class="dropdown is-hoverable"> <!-- casilla que despliegará sus opciones al pasar por encima de ella -->
+          <div class="dropdown-trigger"> <!-- contenedor para el boton de 'Autovía' -->
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu"> <!-- importante que el valor de aria-controls sea igual al id del menu -->
+              <span><p class="title is-2">Autovía</p></span>
+            </button>
+          </div>
+          <div class="dropdown-menu" id="dropdown-menu" role="menu"> <!-- menu que se desplegará al pasar por encima de 'Autovía' -->
+            <div class="dropdown-content">
+              <a href="#tipo1" class="dropdown-item"> Señales de advertencia de peligro </a>
+              <hr class="dropdown-divider" />
+              <a href="#tipo8" class="dropdown-item"> Señales de indicaciones generales </a>
+              <hr class="dropdown-divider" />
+              <a href="#tipo9" class="dropdown-item"> Señales de servicios </a>
+              <hr class="dropdown-divider" />
+              <a href="#tipo10" class="dropdown-item"> Señales de obras </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="dropdown"> 
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+              <span><p class="title is-2">Ciudad</p></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
+        <div class="dropdown">
+          <div class="dropdown-trigger">
+            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+              <span><p class="title is-2">Patinetes</p></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Empieza contenido-->
+    <div class="container">
+        <div class="section">
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <h1 class="title">Autovía: Señales de servicios.</h1><br>
+                </div>
+            </div>
+            <div id="app" class="row columns is-multiline">
+                <!--Empieza recuadro-->
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/servicio/S-100-puesto-de-socorro.svg" alt="S-100.Puesto de socorro.">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4  nombre">S-100. Puesto de socorro</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Indica que hay un puesto de socorro cerca de esa ubicación.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Acaba recuadro-->
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/servicio/S-104-telefono.svg" alt="S-104. Teléfono.">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre">S-104. Teléfono</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Hay un teléfono cerca de esa ubicación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/servicio/S-105-surtidor-de-carburante.svg" alt="S-105. Surtidor de carburante.">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4  nombre">S-105. Surtidor de carburante</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Esta señal indica que en esa zona hay un surtidor de carburante cercano. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/servicio/S-110-hotel-motel.svg" alt="S-110. Hotel o motel.">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre">S-110. Hotel o motel</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Hay un hotel o motel cercano.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/servicio/S-111-restaurante.svg" alt="S-111. Restaurante.">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4  nombre">S-111. Restaurante</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Hay un restaurante cerca de esa ubicación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/servicio/S-112-cafeteria.svg" alt="S-112.Cafetería.">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4  nombre">S-112. Cafetería</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Indica que hay una cafetería cercana a la ubicación en la que te encuentras.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--Aquí empieza el footer, aunque es obvio, me gusta poner el comentario porque así es más fácil de localizar-->
+        <footer>
+            <div class="footer content has-text-centered columns">
+                <div class="column">
+                    <h6>EMPRESA</h6>
+                    <p><a href="#">Empresa</a></p>
+                    <p><a href="#">Trabaja Con Nosotros</a></p>
+                    <p><a href="#">Newsletter</a></p>
+                    <p><a href="#">App</a></p>
+                </div>
+                <div class="column">
+                    <h6>POLÍTICAS</h6>
+                    <p><a href="#">Términos & Condiciones</a></p>
+                    <p><a href="#">Política De Privacidad</a></p>
+                    <p><a href="#">Política De Cookies</a></p>
+                </div>
+                <div class="column">
+                    <h6>CONTACTO</h6>
+                    <a href="tel:+34XXXXXXXXX"><img class="image is-24x24 contacto" src="svg/contacto/telefono.svg" alt="Teléfono"></a>
+                    <a href="mailto:señales@noexiste.org"><img class="image is-24x24 contacto" src="svg/contacto/email.svg" alt="Email"></a>
+                    <a href="https://wa.me/+34XXXXXXXXX"><img class="image is-24x24 contacto" src="svg/contacto/whatsapp.svg" alt="Contacto"></a>
+                </div>
+            </div>
+            <div id="copy">
+                <p>&copy;Todos los derechos reservados</p>
+            </div>
+        </footer>
+  </body>
+</html>
