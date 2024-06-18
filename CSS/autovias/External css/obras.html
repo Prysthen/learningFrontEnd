@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Obras</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>	
+    <div class="columns box-menu">
+        <div class="column is-4">
+            <div class="dropdown is-hoverable"> <!-- casilla que despliegará sus opciones al pasar por encima de ella -->
+                <div class="dropdown-trigger"> <!-- contenedor para el boton de 'Autovía' -->
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu"> <!-- importante que el valor de aria-controls sea igual al id del menu -->
+                    <span><p class="title is-2">Autovía</p></span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu"> <!-- menu que se desplegará al pasar por encima de 'Autovía' -->
+                    <div class="dropdown-content">
+                        <a href="index.html" class="dropdown-item" alt="Página Principal" title="Página principal"> Página principal </a>
+                        <hr class="dropdown-divider" />
+                        <a href="peligro.html" class="dropdown-item" alt="Señales de Advertencia de Peligro" title="Señales de advertencia de peligro"> Señales de advertencia de peligro. </a>
+                        <hr class="dropdown-divider" />
+                        <a href="general.html" class="dropdown-item" alt="Señales de Indicaciones Generales" title="Señales de indicaciones generales"> Señales de indicaciones generales. </a>
+                        <hr class="dropdown-divider" />
+                        <a href="servicios.html" class="dropdown-item" alt="Señales de Servicios" title="Señales de servicios"> Señales de servicios. </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-4">
+            <div class="dropdown"> 
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+                        <span><p class="title is-2">Ciudad</p></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="column is-4">
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+                        <span><p class="title is-2">Patinetes</p></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Empieza contenido-->
+    <div class="container">
+        <div class="section">
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <h1 class="title">Autovía: Señales de obras.</h1><br>
+                </div>
+            </div>
+            <div id="app" class="row columns is-multiline">
+                <!--Empieza recuadro-->
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/obra/PT-17-estrechamiento-de-calzada.svg" alt="PT-17. Estrechamiento de Calzada">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4  nombre">PT-17. Estrechamiento de calzada</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>El primer vehículo que llega al estrechamiento tiene la preferencia y el otro vehículo debe ceder el paso.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Acaba recuadro-->
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/obra/PT-17a-estrechamiento-de-calzada-por-la-derecha.svg" alt="PT-17a. Estrechamiento de Calzada por la Derecha">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre">PT-17a. Estrechamiento de calzada por la derecha</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Indica que el escrechamiento de clazada se producira en el carril derecho.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/obra/PT-17b-estrechamiento-de-calzado-por-la-izquierda.svg" alt="PT-17b. Estrechamiento de Calzado por la Izquierda">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4  nombre">PT-17b. Estrechamiento de calzado por la izquierda</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Indica que el escrechamiento de clazada se producira en el carril izquierdo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/obra/PT-18-obra.svg" alt="PT-18. Obra">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">PT-18. Obra</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Indica que una zona esta bloqueada por obras de manera temporal hasta que esta obra termine.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/obra/PT-28-proyeccion-de-gravilla.svg" alt="PT-28. Proyeccion de Gravilla">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">PT-28. Proyeccion de gravilla</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Indica la presencia de grava o material suelto, que puede ser proyectada dañando a terceros.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!--Aquí empieza el footer, aunque es obvio, me gusta poner el comentario porque así es más fácil de localizar-->
+        <footer>
+            <div class="footer content has-text-centered columns">
+                <div class="column">
+                    <h6>EMPRESA</h6>
+                    <p><a href="#" alt="Empresa" title="Empresa">Empresa</a></p>
+                    <p><a href="#" alt="Trabaja Con Nosotros" title="Trabaja Con Nosotros">Trabaja Con Nosotros</a></p>
+                    <p><a href="#" alt="Newsletter" title="Newsletter">Newsletter</a></p>
+                    <p><a href="#" alt="App" title="App">App</a></p>
+                </div>
+                <div class="column">
+                    <h6>POLÍTICAS</h6>
+                    <p><a href="#" alt="Términos & Condiciones" title="Términos & Condiciones">Términos & Condiciones</a></p>
+                    <p><a href="#" alt="Política De Privacidad" title="Política De Privacidad">Política De Privacidad</a></p>
+                    <p><a href="#" alt="Política De Cookies" title="Política De Cookies">Política De Cookies</a></p>
+                </div>
+                <div class="column">
+                    <h6>CONTACTO</h6>
+                    <a href="tel:+34XXXXXXXXX" alt="Teléfono" title="Teléfono"><img class="image is-24x24 contacto" src="svg/contacto/telefono.svg" alt="Teléfono"></a>
+                    <a href="mailto:señales@noexiste.org" alt="Email" title="Email"><img class="image is-24x24 contacto" src="svg/contacto/email.svg" alt="Email"></a>
+                    <a href="https://wa.me/+34XXXXXXXXX" alt="Whatsapp" title="Whatsapp"><img class="image is-24x24 contacto" src="svg/contacto/whatsapp.svg" alt="Contacto"></a>
+                </div>
+            </div>
+            <div id="copy">
+                <p>&copy;Todos los derechos reservados.</p>
+            </div>
+        </footer>
+  </body>
+</html>
