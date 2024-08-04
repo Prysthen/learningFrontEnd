@@ -91,17 +91,31 @@
         </script>
         -->
 
+        <!--
+            <script>
+                function Sumar(x, y){
+                    let suma;
+                    suma = x + y;
+                    return suma;
+                }
+                let x, y, z;
+                x = parseInt(prompt("Introduce un número A:"));
+                y = parseInt(prompt("Introduce un número B:"));
+                z = Sumar(x, y);
+                console.log("La suma de", x, "más", y, "es", z);
+            </script>
+        -->
+
         <script>
-            function Sumar(x, y){
-                let suma;
-                suma = x + y;
-                return suma;
+            function ImprimirMensaje(text){
+                console.log(text);
             }
-            let x, y, z;
-            x = parseInt(prompt("Introduce un número A:"));
-            y = parseInt(prompt("Introduce un número B:"));
-            z = Sumar(x, y);
-            console.log("La suma de", x, "más", y, "es", z);
+
+            function UsoImprimirMensaje(){
+                let texto;
+                texto = "Hello world";
+                ImprimirMensaje(texto);
+            }
         </script>
 
     </body>
