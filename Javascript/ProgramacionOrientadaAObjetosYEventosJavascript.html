@@ -43,8 +43,11 @@
             }
             const miCoche = new Coche ("Subaru", "Impreza", "Azul electrico");
             miCoche.mostrarInformacion();
-            document.getElementById('acelerar').addEventListener('click',() => {
+            document.getElementById('acelerar').addEventListener('click', () => {
                 miCoche.acelerar(10);
+            });
+            document.getElementById('frenar').addEventListener('click', () => {
+                miCoche.frenar();
             });
         </script>
     </body>

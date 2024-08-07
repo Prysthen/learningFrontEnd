@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Evento de click</title>
+    </head>
+    <body>
+        <button id="miBoton">Haz click aqui</button>
+        <script>
+            const boton = document.getElementById('miBoton');
+            function manejarClic(){
+                console.log("El boton ha sido clicado");
+                alert('El boton ha sido clicado');
+            }
+            boton.addEventListener('click', manejarClic);
+            console.log("addEventListener activado");
+        </script>
+    </body>
+</html>
