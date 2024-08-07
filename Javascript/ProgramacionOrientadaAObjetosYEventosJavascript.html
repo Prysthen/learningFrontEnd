@@ -41,6 +41,11 @@
                     console.log("El coche se ha detendio.");
                 }
             }
+            const miCoche = new Coche ("Subaru", "Impreza", "Azul electrico");
+            miCoche.mostrarInformacion();
+            document.getElementById('acelerar').addEventListener('click',() => {
+                miCoche.acelerar(10);
+            });
         </script>
     </body>
 </html>
