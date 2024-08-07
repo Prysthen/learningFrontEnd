@@ -49,10 +49,26 @@
         </script>
         -->
 
+        <!--
         <script>
             const array = [1, 2, 3];
             for(let value of array){
                 console.log(value);
+            }
+        </script>
+        -->
+        
+        <img src="https://lafeber.com/pet-birds/wp-content/uploads/2018/06/Lovebird.jpg" usemap="#image-map">
+        <map name="image-map">
+        <area target="_blank" alt="Lovebird" title="Lovebird" 
+        href="https://lafeber.com/pet-birds/wp-content/uploads/2018/06/Lovebird.jpg" coords="" shape="rect"
+        onclick="getCoordinates(event)" style="position: relative;">
+        </map>
+        <script>
+            function getCoordinate(event){
+                const x = event.clientX;
+                const y = event.clientY;
+                alert("X: " + x + "Y: " + y);
             }
         </script>
 
