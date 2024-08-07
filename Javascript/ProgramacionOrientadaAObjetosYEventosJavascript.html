@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="with=device-with, initial-scale=1.0">
+        <title>Ejemplo de Programacion Orientada a Objetos en Javascript</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 20 px;
+            }
+            .button{
+                margin: 5px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ejemplo de Programacion Orientada a Objetos en Javascript</h1>
+        <div id = "informacion"></div>
+        <button class="button" id="acelerar">Acelerar</button>
+        <button class="button" id="frenar">Frenar</button>
+        <script>
+            class Coche{
+                constructor(marca, modelo, color, velocidad = 0){
+                    this.marca = marca;
+                    this.modelo = modelo;
+                    this.color = color;
+                    this.velocidad = velocidad;
+                }
+                acelerar(incremento){
+                    this.velocidad += incremento;
+                    this.mostrarInformacion();
+                    console.log("Velocidad incrementada en", incremento, "km/h. Velocidad actual:", this.velocidad);
+                }
+                frenar(){
+                    this.velocidad = 0;
+                    this.mostrarInformacion();
+                    console.log("El coche se ha detendio.");
+                }
+            }
+        </script>
+    </body>
+</html>
