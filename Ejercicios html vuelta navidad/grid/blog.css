@@ -4,7 +4,7 @@
     text-align: center;
 }
 .grid-layout{
-    background: lightgreen;
+    background: rgb(34, 82, 34);
     display: grid;
     grid-template-areas: 
         'cabecera cabecera' 
