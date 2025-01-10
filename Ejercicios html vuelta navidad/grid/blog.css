@@ -1,0 +1,16 @@
+*{
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.grid-layout{
+    background: lightgreen;
+    display: grid;
+    grid-template-areas: 
+        'cabecera cabecera' 
+        'menu menu' 
+        'contenido lateral' 
+        'footer footer';
+    grid-column: 70% auto;
+    height: 700px;
+}

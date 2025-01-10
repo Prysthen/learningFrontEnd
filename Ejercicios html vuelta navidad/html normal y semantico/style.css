@@ -1,0 +1,84 @@
+/* Mi hoja de estilos*/
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+div#container {
+    background: lightcyan;
+    width: 80%;
+    margin: 0 auto;
+    border:  5px solid deepskyblue;
+}
+
+header {
+    background: aquamarine;
+    /* width: 100%; */
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: teal;
+    border: 5px solid green;
+}
+
+nav {
+    /* FONT-WEIGHT: 300; */
+    background: paleturquoise;
+    float: left;
+    height: 80px;
+    width: 100%;
+    border-bottom: 5px solid cornflowerblue;
+}
+
+nav ul li {
+    list-style: none;
+    float: right;
+    margin-left: 80px;
+    line-height: 80px;
+    margin-right: 100px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+section#content {
+    background-color: #99f7ff;
+    width: 75%;
+}
+
+#content, aside {
+    float: left;
+    min-height: 500px;
+}
+
+footer {
+    width: 100%;
+    color: blueviolet;
+    background: lightskyblue;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+aside {
+    background: lightsteelblue;
+    width: 25%;
+}
+
+article.article {color: navy;margin: 15px 10px 10px 15px;border-bottom: 3px solid slategray;padding-bottom: 10px;}
+
+article:first-child {
+    border: 3px dotted green;
+    padding: 15px;
+    background: turquoise;
+}
+
+aside>h2 {color: darkviolet;font-size: 35px;margin-left: 10px;margin-top: 10px;margin-bottom: 5px;}
+
