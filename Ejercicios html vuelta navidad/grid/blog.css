@@ -14,3 +14,14 @@
     grid-column: 70% auto;
     height: 700px;
 }
+
+/*movil*/
+@media(max-width:768px){
+    .grid-layout{
+        grid-template-areas: 
+        'cabecera' 
+        'menu' 
+        'contenido' 
+        'footer';
+    }
+}
