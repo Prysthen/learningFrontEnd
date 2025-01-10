@@ -23,5 +23,8 @@
         'menu' 
         'contenido' 
         'footer';
+
+        grid-template-columns: 1fr;
+        height: auto;
     }
 }
