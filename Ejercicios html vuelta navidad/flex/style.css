@@ -1,0 +1,61 @@
+/* Mi FlexBox */
+
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.caja{
+    padding: 30px;
+    font-family: serif;
+    font-size: 30px;
+    height: 200px;
+    background: blueviolet;
+    text-align: center;
+    line-height: 200px;
+}
+
+.c1{
+    background: lightpink;
+    flex-basis: 100%;
+    order: 1;
+}
+
+.c2{
+    background: lightcoral;
+    flex-basis: 100%;
+    line-height: 50px;
+    height: 60px;
+    order: 2;
+}
+
+.c3{
+    background: lightsalmon;
+    flex-basis: 100px;
+    flex-grow: 1;
+    order: 3;
+}
+
+.c4{
+    background: lightgreen;
+    flex-basis: 100px;
+    flex-grow: 1;
+    order: 4;
+}
+
+.c5{
+    background: lightblue;
+    flex-basis: 100%;
+    line-height: 50px;
+    height: 60px;
+    order: 5;
+}

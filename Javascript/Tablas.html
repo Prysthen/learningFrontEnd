@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<head>
+    <title>Tablas</title>
+    <meta charset="UTF-8">
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid black;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <table>
+        <legend>operadores de asignacion</legend>
+        <tr>
+            <th>Operador abreviado</th>
+            <th>Significado</th>
+        </tr>
+        <tr>
+            <td>x += y</td>
+            <td>x = x+y</td>
+        </tr>
+        <tr>
+            <td>x -= y</td>
+            <td>x = x-y</td>
+        </tr>
+        <tr>
+            <td>x *= y</td>
+            <td>x = x*y</td>
+        </tr>
+        <tr>
+            <td>x /= y</td>
+            <td>x = x/y</td>
+        </tr>
+        <tr>
+            <td>x %= y</td>
+            <td>x = x%y</td>
+        </tr>
+        <tr>
+            <td>x &= y</td>
+            <td>x = x&y</td>
+        </tr>
+        <tr>
+            <td>x ^= y</td>
+            <td>x = x^y</td>
+        </tr>
+        <tr>
+            <td>x |= y</td>
+            <td>x = x|y</td>
+        </tr>
+    </table>
+
+    <table>
+        <legend>operadores de igualdad</legend>
+        <tr>
+            <th>Operador</th>
+            <th>Descripción</th>
+            <th>Ejemplos que devuelven el valor true</th>
+        </tr>
+        <tr>
+            <td>Igualdad (==)</td>
+            <td>Si ambos operandos son iguales devuelve true en caso contrario false. No se comprueba
+                el tipo de datos.
+            </td>
+            <td>7 == y<br>"4" == '4'<br>x == "5"<br>false == false</td>
+        </tr>
+        <tr>
+            <td>Desigualdad (!=)</td>
+            <td>Si ambos operandos no son iguales devuelve true en caso contrario false. No se comprueba
+                el tipo de datos.
+            </td>
+            <td>x != y<br>x != 7<br>x != '5'</td>
+        </tr>
+        <tr>
+            <td>Igualdad estricta (===)</td>
+            <td>Si ambos operandos son iguales y son del mismo tipo de datos devuelve true en caso 
+                contrario false.
+            </td>
+            <td>x === 5<br>y === 7</td>
+        </tr>
+        <tr>
+            <td>Desigualdad estricta (!==)</td>
+            <td>Si ambos operandos no son iguales y/o no tienen el mismo tipo de dato devuelve true.
+            </td>
+            <td>x !== "5"<br>y !== '7'<br>4 !== '4'</td>
+        </tr>
+        <tr>
+            <td>Mayor que (>)</td>
+            <td>Si el operando de la izquierda es mayor que el operando de la derecha devuelve true
+                en caso contrario false. No se comprueba el tipo de datos.
+            </td>
+            <td>y > x<br>4 > 3<br>"4" > 3</td>
+        </tr>
+        <tr>
+            <td>Menor que (<)</td>
+            <td>Si el operando de la izquierda es menor que el operando de la derecha devuelve true
+                en caso contrario false. No se comprueba el tipo de datos.
+            </td>
+            <td>x < y<br>3 < 4<br>3 < "4"</td>
+        </tr>
+        <tr>
+            <td>Mayor o igual que (>=)</td>
+            <td>Si el operando de la izquierda es mayor o igual que el operando de la derecha 
+                devuelve true en caso contrario false. No se comprueba el tipo de datos.
+            </td>
+            <td>y >= x<br>y >= 7<br>4 > 3<br>"4" > 3<br>"4" >= 4</td>
+        </tr>
+        <tr>
+            <td>Menor o igual que (<=)</td>
+            <td>Si el operando de la izquierda es menor o igual que el operando de la derecha
+                devuelve true en caso contrario false. No se comprueba el tipo de datos.
+            </td>
+            <td>x <= y<br>7 <= y<br>3 <= 4<br>3 <= "4"<br>"4" <= 4</td>
+        </tr>
+    </table>
+    <table>
+        <legend>operadores aritméticos</legend>
+        <tr>
+            <th>Operador</th>
+            <th>Descripción</th>
+            <th>Ejemplo</th>
+        </tr>
+        <tr>
+            <td>+ (suma)</td>
+            <td>Operador binario. Devuelve la suma de dos operandos.</td>
+            <td>3 + 4 devuelve 7<br>x + 3 devuelve 8</td>
+        </tr>
+        <tr>
+            <td>- (resta)</td>
+            <td>Operador binario. Devuelve la resta de dos operandos.</td>
+            <td>3 - 4 devuelve -1<br>x - 3 devuelve 2</td>
+        </tr>
+        <tr>
+            <td>* (multiplicación)</td>
+            <td>Operador binario. Devuelve la multiplicación de dos operandos.</td>
+            <td>3 * 4 devuelve 12<br>x * 3 devuelve 15</td>
+        </tr>
+        <tr>
+            <td>/ (división)</td>
+            <td>Operador binario. Devuelve el cociente de la división. Tenga en cuenta que la
+                división entre 0 devuelve Infinity.
+            </td>
+            <td>3 / 4 devuelve 0.75<br>x / 3 devuelve 1,667<br>3 / 0 devuelve Infinity</td>
+        </tr>
+        <tr>
+            <td>% (modulo)</td>
+            <td>Operador binario. Devuelve el resto de la división.</td>
+            <td>3 % 4 devuelve 3<br>x % 3 devuelve 2</td>
+        </tr>
+        <tr>
+            <td>++ (incremento)</td>
+            <td>Operador unario. Suma una unidad al operando. Este operador puede ir delante o detrás
+                de la variable. El comportamiento es muy diferente puesto que si el operando es (++x)
+                el valor devuelto será posterior de realizar la incrementación. En cambio si el
+                operador es detrás (x++) primero se devuelve el valor y posteriormente se realiza la operación.
+            </td>
+            <td>++x devuelve 6 puesto que primero se realiza la operación.<br>
+                x++ devuelve 5 y el valor de x pasa a ser 6.</td>
+        </tr>
+        <tr>
+            <td>-- (decremento)</td>
+            <td>Operador unario. Resta una unidad al operando. Su comportamiento es idéntico
+                al descrito para el operador incremento (++).
+            </td>
+            <td>--x devuelve 4 puesto que primero se realiza la operación.<br>
+                x-- devuelve 5 y el valor de x pasa a ser 4.</td>
+        </tr>
+        <tr>
+            <td>- (negación)</td>
+            <td>Operador unario. Niega el valor del número. Es decir, los números positivos
+                serán negativos y los negativos serán positivos.
+            </td>
+            <td>-x devuelve -5<br>
+                - (-x) devuelve 5</td>
+        </tr>
+    </table>
+    <table>
+        <legend>operadores a nivel de bit</legend>
+        <tr>
+            <th>Operador</th>
+            <th>Descripción</th>
+            <th>Uso</th>
+        </tr>
+        <tr>
+            <td>AND (Y)</td>
+            <td>Devuelve 1 si los 2 bits tienen el valor 1. En caso contrario es 0.</td>
+            <td>x & y</td>
+        </tr>
+        <tr>
+            <td>OR (O)</td>
+            <td>Devuelve 1 si alguno de los 2 bits tienen el valor 1. En caso contrario es 0.</td>
+            <td>x | y</td>
+        </tr>
+        <tr>
+            <td>XOR (O exclusivo)</td>
+            <td>Devuelve 1 si alguno de los 2 bits tienen el valor 1 pero si los 2 bits son 1 devolverá 0.
+                En el último caso también será o.
+            </td>
+            <td>x ^ y</td>
+        </tr>
+        <tr>
+            <td>NOT (No)</td>
+            <td>Invierte el valor del bit. Si el bit tenía el valor 1 pasará a 0 y viceversa.</td>
+            <td>!x</td>
+        </tr>
+        <tr>
+            <td>Left shift (Desplazamiento izquierda)</td>
+            <td>Desplaza los valores de los bits hacia la izquierda del número (x) el número 
+                de posiciones que se indican en (y). Los valores son rellenados con cero a la 
+                izquierda y los números iniciales (más a la izquierda) son desechados. Esta 
+                operación es equivalente a multiplicar por potencias de 2.
+            </td>
+            <td>x << y</td>
+        </tr>
+        <tr>
+            <td>Sign-propagation right shift (Desplazamiento a la derecha)</td>
+            <td>Desplaza los valores de los bits hacia la derecha del número (x) el número 
+                de posiciones que se indican en (y). Los valores son rellenados con cero a la 
+                derecha y los números finales (más a la derecha) son desechados. Esta 
+                operación es equivalente a dividir en potencias de 2. Es importante 
+                resaltar que el signo del número es mantenido en el desplazamiento, 
+                dando lugar a números diferentes.
+            </td>
+            <td>x >> y</td>
+        </tr>
+        <tr>
+            <td>Zero-fill right shift (Rellenar con ceros a la derecha)</td>
+            <td>Es igual que el desplazamiento a la derecha pero no se mantiene el signo 
+                en el desplazamiento.
+            </td>
+            <td>x >>> y</td>
+        </tr>
+    </table>
+    <table>
+        <legend>operaciones para las expresiones de objetos</legend>
+        <tr>
+            <th>Operadores</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>new</td>
+            <td>Crea una nueva instancia de un objeto</td>
+        </tr>
+        <tr>
+            <td>delete</td>
+            <td>Elimina el valor de una propiedad u objeto</td>
+        </tr>
+        <tr>
+            <td>instanceof</td>
+            <td>Comprueba el tipo de datos de un objeto</td>
+        </tr>
+        <tr>
+            <td>in</td>
+            <td>Comprueba si una propiedad existe en un objeto</td>
+        </tr>
+        <tr>
+            <td>typeof</td>
+            <td>Devuelve el tipo de datos del parámetro</td>
+        </tr>
+        <tr>
+            <td>this</td>
+            <td>Se hace referencia al objeto que se encuentra en el ámbito</td>
+        </tr>
+        <tr>
+            <td>void</td>
+            <td>Desecha el valor devuelto de una expresión</td>
+        </tr>
+</body>
