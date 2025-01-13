@@ -14,6 +14,12 @@
     grid-column: 70% auto;
     height: 700px;
 }
+.caja{
+    border: 3px dotted black;
+    margin: 20px;
+    padding: 20px;
+
+}
 
 .c1{
     grid-area: cabecera;
