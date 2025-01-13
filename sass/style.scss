@@ -5,6 +5,19 @@ $colorLetra: yellowgreen;
 $widthMedio: 500px;
 $heightCompleto: 100vh;
 
+//Comentario publico
+
 body{
     background: $colorPrincipal;
+}
+
+/*Comerntario privado*/
+
+h1, p{
+    $colorLetra
+}
+
+//Operadores
+.caja{
+    width: (400px + $widthMedio);
 }
