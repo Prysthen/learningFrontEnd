@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <script>
+            let nombre = "Juan"
+            const edad = 25;
+            console.log(`Hola, mi nombre es ${nombre} y tengo ${edad} años.`);
+        </script>
+
+        <script>
+            var variableGlobal = "Soy accesible en todo el archivo";
+            let variableLocal = "Puedo cambiar";
+            variableLocal = "Cambio permitido";
+        </script>
+
+        <script>
+            let edad = 18;
+            if(edad >= 18){
+                console.log("Eres mayor de edad.")
+            }
+            else{
+                confirm.log("Eres menor de edad.");
+            }
+            let mensaje = (edad >= 18) ? "Mayor de edad" : "Menor de edad";
+            console.log(mensaje);
+        </script>
+
+        <script>
+            for(let i = 0; i < 5; i++){
+                console.log(`Iteración: ${i}`);
+            }
+        </script>
+        <script>
+            let contador = 0;
+            while(contador < 3){
+                console.log(`Contador: ${contador}`);
+                contador++;
+            }
+        </script>
+        <script>
+            let fruta = ["Manzana", "Pera", "Sandia", "Melon"]
+            fruta.forEach((fruta, indice) => {console.log(`Fruta ${indice + 1}: ${fruta}`);})
+        </script>
+    </body>
+</html>
