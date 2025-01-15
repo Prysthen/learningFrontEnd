@@ -6,10 +6,12 @@
     <title>Document</title>
 </head>
     <body>
+        
+        <!-- Imprimir por pantalla ( console.log() )-->
         <script>
-            let nombre = "Juan"
-            const edad = 25;
-            console.log(`Hola, mi nombre es ${nombre} y tengo ${edad} años.`);
+            let name = "Juan"
+            const age = 25;
+            console.log(`Hola, mi nombre es ${name} y tengo ${age} años.`);
         </script>
 
         <script>
@@ -18,6 +20,7 @@
             variableLocal = "Cambio permitido";
         </script>
 
+        <!-- if -->
         <script>
             let edad = 18;
             if(edad >= 18){
@@ -28,13 +31,16 @@
             }
             let mensaje = (edad >= 18) ? "Mayor de edad" : "Menor de edad";
             console.log(mensaje);
-        </script>
+        </script>ç
 
+        <!-- for -->
         <script>
             for(let i = 0; i < 5; i++){
                 console.log(`Iteración: ${i}`);
             }
         </script>
+
+        <!-- while -->
         <script>
             let contador = 0;
             while(contador < 3){
@@ -42,9 +48,68 @@
                 contador++;
             }
         </script>
+
+        <!-- foreach -->
         <script>
-            let fruta = ["Manzana", "Pera", "Sandia", "Melon"]
-            fruta.forEach((fruta, indice) => {console.log(`Fruta ${indice + 1}: ${fruta}`);})
+            let frutas = ["Manzana", "Pera", "Sandia", "Melon"]
+            frutas.forEach((fruta, indice) => {console.log(`Fruta ${indice + 1}: ${fruta}`);})
         </script>
+
+        <!-- funcion de declarativa -->
+        <script>
+            function saludar(nombre){
+                return `Hola, ${nombre}!`;
+            }
+            console.log(saludar("Ana"));
+        </script>
+
+        <!-- Funcion flecha (Hacer una suma) -->
+        <script>
+            const sumar = (a, b) =>  a + b;
+            console.log(sumar(5, 3));
+        </script>
+
+        <!-- Funcion flecha (Hacer una resta) -->
+        <script>
+            const restar = (a, b) =>  a - b;
+            console.log(restar(5, 3));
+        </script>
+
+        <!-- Funcion flecha (Hacer una multiplicacion) -->
+        <script>
+            const multiplicar = (a, b) =>  a * b;
+            console.log(multiplicar(5, 3));
+        </script>
+
+        <!-- Funcion flecha (Hacer una division) -->
+        <script>
+            const dividir = (a, b) =>  a / b;
+            console.log(dividir(5, 3));
+        </script>
+        
+        <!-- Propiedades-->
+        <script>
+            let persona = {
+                nombre: "Carlos",
+                edad: 30,
+                saludar: function(){
+                    console.log(`Hola, soy ${this.nombre}`);
+                }
+            };
+            console.log(persona.nombre);
+            persona.saludar();
+        </script>
+
+        <!-- Agregar propiedades -->
+        <script>
+            let person = {
+                nombre: "Juan",
+                edad: 30,
+                profesion: "developer"
+            };
+            console.log(person.nombre);
+            console.log(person["edad"]);
+        </script>
+
     </body>
 </html>
