@@ -31,7 +31,7 @@
             }
             let mensaje = (edad >= 18) ? "Mayor de edad" : "Menor de edad";
             console.log(mensaje);
-        </script>ç
+        </script>
 
         <!-- for -->
         <script>
@@ -86,7 +86,7 @@
             const dividir = (a, b) =>  a / b;
             console.log(dividir(5, 3));
         </script>
-        
+
         <!-- Propiedades-->
         <script>
             let persona = {
@@ -100,15 +100,25 @@
             persona.saludar();
         </script>
 
-        <!-- Agregar propiedades -->
+        <!-- Agregar, modificar y eliminar propiedades -->
         <script>
             let person = {
                 nombre: "Juan",
                 edad: 30,
-                profesion: "developer"
+                profesion: "Developer"
             };
             console.log(person.nombre);
             console.log(person["edad"]);
+
+            person.edad = 31;
+            console.log(person.edad);
+
+            delete person.profesion;
+            console.log(person.profesion);
+        </script>
+
+        <script>
+
         </script>
 
     </body>
