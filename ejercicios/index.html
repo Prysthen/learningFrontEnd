@@ -117,9 +117,35 @@
             console.log(person.profesion);
         </script>
 
+        <!-- Anidacion -->
         <script>
-
+            let vehiculo = {
+                marca: "Subaru",
+                modelo: "Impreza",
+                motor: {
+                    tipo:"Gasolina",
+                    potencia: "300 HP"
+                }
+            }
+            console.log(vehiculo.motor.tipo);
         </script>
 
+        <!-- Metodos en objetos (Calculadora) -->
+        <script>
+            let calculadora = {
+                sumar: function (a, b) {
+                    return a + b;
+                },
+                restar: (a, b) => a - b,
+                multiplicar: (a, b) =>  a * b,
+                dividir: (a, b) =>  a / b,
+                modulo: (a,b) => a % b
+            };
+            console.log(calculadora.sumar(3, 5));
+            console.log(calculadora.restar(10,4));
+            console.log(calculadora.multiplicar(6,4));
+            console.log(calculadora.dividir(8,4));
+            console.log(calculadora.modulo(8,3));
+        </script>
     </body>
 </html>
