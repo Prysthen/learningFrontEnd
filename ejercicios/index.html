@@ -139,13 +139,25 @@
                 restar: (a, b) => a - b,
                 multiplicar: (a, b) =>  a * b,
                 dividir: (a, b) =>  a / b,
-                modulo: (a,b) => a % b
+                modulo: (a, b) => a % b,
+
+                esPar: function(a){
+                    if(a % 2 == 0){
+                        console.log("Es par")
+                    }
+                    else{
+                        console.log("Es impar")
+                    }
+                    /* return a%2 == 0? "Es par" : "Es impar"; */
+                }
             };
             console.log(calculadora.sumar(3, 5));
             console.log(calculadora.restar(10,4));
             console.log(calculadora.multiplicar(6,4));
             console.log(calculadora.dividir(8,4));
             console.log(calculadora.modulo(8,3));
+
+            
         </script>
     </body>
 </html>
