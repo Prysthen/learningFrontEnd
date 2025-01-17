@@ -11,10 +11,32 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Rutas
 app.get('/', (req, res) => {
-    res.render('index', { title: 'Inicio', message: 'Bienvenido a mi sitio web con PUG y Express' });
+    res.render('index', { 
+        title: 'Inicio', 
+        message: 'Bienvenido a mi sitio web con PUG y Express' 
+    });
 });
 app.get('/about', (req, res) => {
-    res.render('about', { title: 'Sobre Nosotros', content: 'Esta es la página sobre nosotros.' });
+    res.render('about', { 
+        title: 'Sobre Nosotros', 
+        content: 'Esta es la página sobre nosotros.' 
+    });
+});
+app.get('/blog', (req, res) => {
+    res.render('blog', { 
+        title: 'Servicios del blog', 
+        content: 'Servicios del blog.' 
+    });
+});
+app.get('/service', (req, res) => {
+    res.render('service', { 
+        title: 'Noticias', 
+        content: 'Noticias del día.',
+        imgP: imagenP.jpg,
+        altP: 'Descripcion de la imagen principal',
+        img2: imagen2.png,
+        alt2: 'Texto alternativo imagen 2'
+    });
 });
 
 // Iniciar el servidor
