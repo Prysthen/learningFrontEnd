@@ -51,7 +51,7 @@ app.get('/blog', (req, res) =>{
 });
 
     // Iniciar el servidor
-    const PORT = 3003;
+    const PORT = 3000;
     app.listen(PORT, () => {
     console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
     });
