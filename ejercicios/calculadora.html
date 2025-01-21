@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    
+<body>
+
+    <!-- Funcion flecha (Hacer una suma) -->
+    <script>
+        const sumar = (a, b) =>  a + b;
+        console.log(sumar(5, 3));
+    </script>
+
+    <!-- Funcion flecha (Hacer una resta) -->
+    <script>
+        const restar = (a, b) =>  a - b;
+        console.log(restar(5, 3));
+    </script>
+
+    <!-- Funcion flecha (Hacer una multiplicacion) -->
+    <script>
+        const multiplicar = (a, b) =>  a * b;
+        console.log(multiplicar(5, 3));
+    </script>
+
+    <!-- Funcion flecha (Hacer una division) -->
+    <script>
+        const dividir = (a, b) =>  a / b;
+        console.log(dividir(5, 3));
+    </script>
+    
+    <!-- Metodos en objetos (Calculadora) -->
+    <script>
+        let calculadora = {
+            sumar: function (a, b) {
+                return a + b;
+            },
+            restar: (a, b) => a - b,
+            multiplicar: (a, b) =>  a * b,
+            dividir: (a, b) =>  a / b,
+            modulo: (a, b) => a % b,
+
+            esPar: function(a){
+                if(a % 2 == 0){
+                    console.log("Es par")
+                }
+                else{
+                    console.log("Es impar")
+                }
+                /* return a%2 == 0? "Es par" : "Es impar"; */
+            }
+        };
+        console.log(calculadora.sumar(3, 5));
+        console.log(calculadora.restar(10,4));
+        console.log(calculadora.multiplicar(6,4));
+        console.log(calculadora.dividir(8,4));
+        console.log(calculadora.modulo(8,3));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
