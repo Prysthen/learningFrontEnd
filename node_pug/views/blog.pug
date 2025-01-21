@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title= title 
+        link(rel="stylesheet", href="/style.css")
+    body
+    h1= message
+    nav
+        a(href="/") Inicio
+        a(href="/blog") Mi blog
+        a(href="/nosotros") Sobre Nosotros
+        block content 
+    h1 #{title}
