@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.sass">
-        <title>Exam Exercise</title>
-    </head>
-    <body>
-        <header>
-            <img src="https://www.mypets.net.au/wp-content/uploads/2024/07/Peach-Faced-Lovebirds-as-Pets-1.jpg" alt="Peach face Lovebirds">
-        </header>
-        <nav>
-            <ul>
-                <li><a href="" target="_blank" rel="noopener noreferrer">Inicio</a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer">About us</a></li>
-                <li><a href="" target="_blank" rel="noopener noreferrer">FAQ</a></li>
-            </ul>
-        </nav>
-        <div class="clearfix"></div>
-        <content>
-            <h1>Texto</h1>
-            <h2>Texto</h2>
-            <h3>Texto</h3>
-            <h4>Texto</h4>
-            <h5>Texto</h5>
-            <h6>Texto</h6>
-            <p>Textito tocho</p>
-            <p>Textazo tochisimo del lado derecho</p>
-        </content>
-        <div class="clearfix"></div>
-        <aside>
-            <img src="https://www.billboard.com/wp-content/uploads/media/taylor-swift-grammy-2015-blue-dress-style-billboard-1240.jpg?w=800" alt="Blue dress Taylor">
-            <p>La Taylor</p>
-            <input type="button" value="Leer">
-        </aside>
-        <aside>
-            <img src="https://www.autofacil.es/wp-content/uploads/2024/10/Aston-Martin-F1-ya-trabaja-en-el-AMR25-de-Fernando-Alonso_00001.jpg" alt="El AMR25">
-            <p>El AMR 25</p>
-            <input type="button" value="Leer">
-        </aside>
-        <aside>
-            <img src="https://fotografias.antena3.com/clipping/cmsimages01/2023/02/09/9B15C034-6FEF-4A5B-894A-ADF1272A9662/fernando-alonso-imagen-facilitada-aston-martin_98.jpg?crop=800,450,x0,y0&width=1900&height=1069&optimize=low&format=webply" alt="Nano">
-            <p>El Nano</p>
-            <input type="button" value="Leer">
-        </aside>
-        <div class="clearfix"></div>
-        <footer>
-            <div>
-                Aviso 1
-                (//añadir icono)
-            </div>
-            <div>
-                Aviso 2
-            </div>
-            <div>
-                Aviso 3
-            </div>
-            <div>
-                Aviso 4
-            </div>
-            <div>
-                Aviso 5
-            </div>
-            <div>
-                Aviso 6
-            </div>
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio con estilo SASS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <img src="img/lovebirdGroup.jpg" alt="Imagen de un grupo de agapornis">
+    <nav>
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Acerca</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <h1>Los agapornis.</h1>
+    <h2>Son aves originarios de África.</h2>
+    <h3>Pertenecen a la familia psittaculidae (como todos los loros).</h3>
+    <h4>También se les conoce como "inseparables".</h4>
+    <h5>Suelen formar un fuerte vínculo con su pareja.</h5>
+    <h6>Si tienes un agaporni en casa, necesitará unos cuidados especiales y mucha interacción social.</h6>
+
+    <section class="textos">
+        <p class="texto1">Hay 9 especies reconocidas, las principales son el agaporni roiseicollis, el agapornis personatus, el agapornis fischeri y el agaporni lilianae. La principal diferencia entre ellas es el color del plumaje, el anillo ocular y le tamaño.</p>
+        <p class="texto2">Tienen un tamaño que oscila entre los 13 y 17cm y de peso entre 40 y 60g. El plumaje mas común suele ser de color verde, amarillo, blanco, rojo y azul.</p>
+    </section>
+
+    <section class="cartas">
+        <div class="carta">
+            <img src="img/AgaporniRoisecollis.jpg" alt="Agapornis roisecollis">
+            <p>Pareja de agaporni roisecollis</p>
+            <button>Botón 1</button>
+        </div>
+        <div class="carta">
+            <img src="img/AgapornisPersonata.jpg" alt="Cria de agapornis personatus">
+            <p>Agapornis Personataus bebés</p>
+            <button>Botón 2</button>
+        </div>
+        <div class="carta">
+            <img src="img/AgapornisDucha.jpg" alt="Agapornis bañándose">
+            <p>Agapornis bañándose.</p>
+            <button>Botón 3</button>
+        </div>
+    </section>
+
+    <section class="avisos">
+        <div class="aviso">
+            <i class="icon">💡</i>
+            <p>Aviso 1: son muy listos.</p>
+        </div>
+        <div class="aviso2">
+            <i class="icon">📢</i>
+            <p>Aviso 2: cantan y chillan.</p>
+        </div>
+        <div class="aviso3">
+            <i class="icon">✅</i>
+            <p>Aviso 3: son muy bonitos y graciosos.</p>
+        </div>
+        <div class="aviso4">
+            <i class="icon">🔔</i>
+            <p>Aviso 4: pican.</p>
+        </div>
+        <div class="aviso5">
+            <i class="icon">⚠️</i>
+            <p>Aviso 5: hacen mucha caca.</p>
+        </div>
+        <div class="aviso6">
+            <i class="icon">🔑</i>
+            <p>Aviso 6: puedes usarlos para abrir sobres.</p>
+        </div>
+    </section>
+</body>
 </html>
