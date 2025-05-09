@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inner HTML ejemplo</title>
+        <script>
+            window.onload = function(){
+                let div = document.createElement("div");
+                div.innerHTML = 
+                    `
+                    <h1>Encabezado hecho con InnerHTML.</h1>
+                    <p>Párrafo generado con InnerHTML.</p>
+                    `;
+                    document.body.appendChild(div);
+            };
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

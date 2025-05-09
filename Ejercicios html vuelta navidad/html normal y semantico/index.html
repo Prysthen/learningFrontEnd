@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web con barra lateral y css</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1 class="titulo">Proyecto web</h1> <!-- h1.titulo -->
+        </header>
+        <nav>
+            <ul>
+                <!-- (li>a.link$)*4 -->
+
+                <li><a href="" target="_blank"  rel="noopener noreferrer">Inicio</a></li>
+                <li><a href="" target="_blank"  rel="noopener noreferrer">Quienes Somos</a></li>
+                <li><a href="" target="_blank"  rel="noopener noreferrer">Donde Estamos</a></li>
+                <li><a href="" target="_blank" rel="noopener noreferrer">Contactanos</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+        <section id="content"> <!-- section.content -->
+
+            <!-- (article.article>((h2.tituloArticulo)p>lorem>))*4 -->
+
+            <article class="article">
+                <h2 class="tituloArticulo">Noticia 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fuga quasi repellendus asperiores aliquid temporibus aspernatur iste similique. Atque, aliquid asperiores? Non expedita repudiandae quidem cumque explicabo sapiente, dignissimos qui?</p>
+            </article>
+            <article class="article">
+                <h2 class="tituloArticulo">Noticia 2</h2>
+                <p>Consequatur quis, libero laborum dicta tempore optio possimus aperiam omnis sit odio, ullam velit dignissimos excepturi fuga, ipsam eius iste odit quidem veritatis laboriosam quo quos! Porro illo doloribus voluptatem.</p>
+            </article>
+            <article class="article">
+                <h2 class="tituloArticulo">Noticia 3</h2>
+                <p>Repellendus quod quos, rem atque ratione officiis vero neque dolore enim, obcaecati nisi? Eligendi quis aliquid dolor libero omnis excepturi ducimus error fugit temporibus, vel laborum pariatur, accusamus ut quaerat.</p>
+            </article>
+            <article class="article">
+                <h2 class="tituloArticulo">Noticia 4</h2>
+                <p>Inventore excepturi natus molestias reprehenderit officiis illo fuga, dolorem nulla illum quo vel ratione quaerat a suscipit sapiente obcaecati. Reprehenderit officia corporis fuga laudantium facilis laboriosam eaque molestias in iusto.</p>
+            </article>
+        </section>
+        <aside>
+            <h2>barra lateral</h2>
+            <form>
+                <input type="text" name="buscar" id="buscar">
+                <input type="button" value="Buscar">
+            </form>
+        </aside>
+        <div class="clearfix"></div>
+        <footer>
+            <div class="footer">
+                &copy; Todos los contenidos con derechos de autor.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

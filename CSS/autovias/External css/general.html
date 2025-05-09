@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Indicaciones generales</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>	
+    <div class="columns box-menu">
+        <div class="column is-4">
+            <div class="dropdown is-hoverable"> <!-- casilla que despliegará sus opciones al pasar por encima de ella -->
+                <div class="dropdown-trigger"> <!-- contenedor para el boton de 'Autovía' -->
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu"> <!-- importante que el valor de aria-controls sea igual al id del menu -->
+                        <span><p class="title is-2">Autovía</p></span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu"> <!-- menu que se desplegará al pasar por encima de 'Autovía' -->
+                    <div class="dropdown-content">
+                        <a href="index.html" class="dropdown-item" alt="Página Principal" title="Página principal"> Página principal </a>
+                        <hr class="dropdown-divider" />
+                        <a href="peligro.html" class="dropdown-item" alt="Señales de Advertencia de Peligro" title="Señales de advertencia de peligro"> Señales de advertencia de peligro. </a>
+                        <hr class="dropdown-divider" />
+                        <a href="servicios.html" class="dropdown-item" alt="Señales de Servicios" title="Señales de servicios"> Señales de servicios. </a>
+                        <hr class="dropdown-divider" />
+                        <a href="obras.html" class="dropdown-item" alt="Señales de Obras" title="Señales de obras"> Señales de obras. </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column is-4">
+            <div class="dropdown"> 
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+                        <span><p class="title is-2">Ciudad</p></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="column is-4">
+            <div class="dropdown">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+                        <span><p class="title is-2">Patinetes</p></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Empieza contenido-->
+    <div class="container">
+        <div class="section">
+            <div class="columns">
+                <div class="column has-text-centered">
+                    <h1 class="title">Autovía:Señales Generales</h1><br>
+                </div>
+            </div>
+            <div id="app" class="row columns is-multiline">
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-1a-autovia.svg" alt="S-1a. Autovía">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-1a. Autovías</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Señala el inicio de una Autovías, una zona en la cual no hay que detenerse, no hay semaforos ni pasos de cebra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-2a-fin-de-autovia.svg" alt="S-2a. Final de la Autovía">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-2a. Fin de Autovía</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Señaliza que se aproxima al fin de la autovía.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-1-autopista.svg" alt="S-1. Autopista">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-1. Autopistas</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Inidica el inicio de una autopista, es similar a una autovías, pero con limitación de entradas y salidas al ser más estrechas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-2-fin-de-autopista.svg" alt="S-2. Final de la Autopista">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-2. Fin de Autopista</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Señaliza que se aproxima al fin de la autopista.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-5-tunel.svg" alt="S-5. Túnel">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-5. Túnel</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Se aproxima un túnel y por tanto hay que encender las luces cortas para tener visibilidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-6-fin-de-tunel.svg" alt="S-6. Final del Túnel">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-6. Fin de Túnel</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Se aproxima el final del túnel, si es de día, ir preparándose para la diferencia de luz.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-7-velocidad-maxima-aconsejada.svg" alt="S-7. Velocidad Máxima Aconsejada">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-7. Velocidad Máxima</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Indica la velocidad máxima que haya en cada zona definida por el número señalado en kilometros por hora para evitar accidentes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-8-fin-velocidad-maxima-aconsejada.svg" alt="S-8. Final de Velocidad Máxima Aconsejada">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-8. Fin Velocidad Máxima</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Indica el final de la velocidad máxima.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-16-zona-de-frenado-de-emergencia.svg" alt="S-16. Frenado de Emergencia">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-16. Frenado de Emergencia</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Ayudar a vehículos a frenar cuando este no puede por sí mismo. Normalmente se ubica junto al carril derecho.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-24-obligacion-de-alumbrado-de-corto-alcance.svg" alt="S-24. Alumbrado Obligatorio">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-24. Alumbrado Obligatorio</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Señaliza un carril donde es obligatorio tener las luces del automóvil encendidas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-24a-fin-de-obligacion-de-alumbrado-de-corto-alcance.svg" alt="S-24a. Final de Alumbrado Obligatorio">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre">S-24a. Fin de Alumbrado Obligatorio</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Señaliza el final de las luces obligatorias.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-25-cambio-de-sentido-a-distinto-nivel.svg" alt="S-25. Cambio de Sentido a Distinto Nivel">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-25. Sentido a Diferente Nivel</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Se señaliza que el cambio de sentido se realiza en un diferente nivel de altura.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-26a-panel-de-aproximacion-a-salida-300m.svg" alt="S-26a. Aproximación de Salida 300m">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-26a. Aproximación de Salida 300m</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Se señaliza la distancia (300m) y hacia donde esta la salida de la vía.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-26b-panel-de-aproximacion-a-salida-200m.svg" alt="S-26b. Aproximación de Salida 200m">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-26b. Aproximación de Salida 200m</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Se señaliza la distancia (200m) y hacia donde esta la salida de la vía.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-26c-panel-de-aproximacion-a-salida-100m.svg" alt="S-26c. Aproximación de Salida 100m">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-26c. Aproximación de Salida 100m</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Se señaliza la distancia (100) y hacia donde esta la salida de la vía.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-34-apartadero-en-tuneles.svg" alt="S-34. Apartadero en Túneles">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-34. Apartadero en Túneles</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Sirven al conductor para detenerse en un lugar seguro, para no dificultar la circulación del resto y reducir riesgos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card-image has-text-centered">
+                        <figure>
+                            <img src="svg/generales/S-52-final-de-carril-destinado-a-la-circulacion.svg" alt="S-52. Final de Carril Destinado a la Circulación">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <div>
+                        <div class="media-content">
+                            <p class="title is-4 nombre corto">S-52. Final Carril de Circulación</p>
+                        </div>
+                    </div>
+                        <div class="content borde">
+                            <p>Señala que el carril termina en unos metros y que hay que cambiarse de carril.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>			
+        </div>		
+    </div>
+        <!--Aquí empieza el footer, aunque es obvio, me gusta poner el comentario porque así es más fácil de localizar-->
+        <footer>
+            <div class="footer content has-text-centered columns">
+                <div class="column">
+                    <h6>EMPRESA</h6>
+                    <p><a href="#" alt="Empresa" title="Empresa">Empresa</a></p>
+                    <p><a href="#" alt="Trabaja Con Nosotros" title="Trabaja Con Nosotros">Trabaja Con Nosotros</a></p>
+                    <p><a href="#" alt="Newsletter" title="Newsletter">Newsletter</a></p>
+                    <p><a href="#" alt="App" title="App">App</a></p>
+                </div>
+                <div class="column">
+                    <h6>POLÍTICAS</h6>
+                    <p><a href="#" alt="Términos & Condiciones" title="Términos & Condiciones">Términos & Condiciones</a></p>
+                    <p><a href="#" alt="Política De Privacidad" title="Política De Privacidad">Política De Privacidad</a></p>
+                    <p><a href="#" alt="Política De Cookies" title="Política De Cookies">Política De Cookies</a></p>
+                </div>
+                <div class="column">
+                    <h6>CONTACTO</h6>
+                    <a href="tel:+34XXXXXXXXX" alt="Teléfono" title="Teléfono"><img class="image is-24x24 contacto" src="svg/contacto/telefono.svg" alt="Teléfono"></a>
+                    <a href="mailto:señales@noexiste.org" alt="Email" title="Email"><img class="image is-24x24 contacto" src="svg/contacto/email.svg" alt="Email"></a>
+                    <a href="https://wa.me/+34XXXXXXXXX" alt="Whatsapp" title="Whatsapp"><img class="image is-24x24 contacto" src="svg/contacto/whatsapp.svg" alt="Contacto"></a>
+                </div>
+            </div>
+            <div id="copy">
+                <p>&copy;Todos los derechos reservados.</p>
+            </div>
+        </footer>
+  </body>
+</html>

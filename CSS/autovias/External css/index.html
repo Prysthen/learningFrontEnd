@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Seguridad Vial</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="columns box-menu">
+        <div class="column is-4">
+           <div class="dropdown is-hoverable"> <!-- casilla que despliegará sus opciones al pasar por encima de ella -->
+            <div class="dropdown-trigger"> <!-- contenedor para el boton de 'Autovía' -->
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu"> <!-- importante que el valor de aria-controls sea igual al id del menu -->
+                <span><p class="title is-2">Autovía</p></span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu"> <!-- menu que se desplegará al pasar por encima de 'Autovía' -->
+              <div class="dropdown-content">
+                <a href="peligro.html" class="dropdown-item" alt="Señales de advertencia de peligro" title="Señales de advertencia de peligro"> Señales de advertencia de peligro. </a>
+                <hr class="dropdown-divider" />
+                <a href="general.html" class="dropdown-item" alt="Señales de indicaciones generales" title="Señales de indicaciones generales"> Señales de indicaciones generales. </a>
+                <hr class="dropdown-divider" />
+                <a href="servicios.html" class="dropdown-item" alt="Señales de servicios" title="Señales de servicios"> Señales de servicios. </a>
+                <hr class="dropdown-divider" />
+                <a href="obras.html" class="dropdown-item" alt="Señales de obras" title="Señales de obras"> Señales de obras. </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="dropdown"> 
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+                <span><p class="title is-2">Ciudad</p></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4">
+          <div class="dropdown">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu1">
+                <span><p class="title is-2">Patinetes</p></span>
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <!--título-->
+    <h1 class="title is-1">Seguridad Vial</h1>
+    <br>
+    <div class="vial">
+        <div class="has-text-centered stop">
+            <img src="svg/stop.jpg" alt="Señal de stop">
+        </div>
+        <ul>
+          <li id="indice">Índice.</li> <br>
+          <li><a href="#peligro" alt="Señales de advertencia de peligro" title="Señales de advertencia de peligro">Señales de advertencia de peligro.</a></li> <br>
+          <li><a href="#generales" alt="Señales de indicaciones generales" title="Señales de indicaciones generales">Señales de indicaciones generales.</a></li> <br>
+          <li><a href="#servicios" alt="Señales de servicios" title="Señales de servicios">Señales de servicios.</a></li> <br>
+          <li><a href="#obra" alt="Señales de obras" title="Señales de obras">Señales de obras.</a></li> <br>
+        </ul>
+    </div>
+    <br>
+    <!--Empieza contenido-->	
+    <div class="contenido">
+      <h2 class="title is-2" id="h2">Tipos de señales</h2>
+      <div>
+        <h3 class="title is-3" id="peligro">Señales de advertencia de peligro</h3>
+        <h5 class="subtitle">Las señales de advertencia de peligro indican la proximidad y la naturaleza de un peligro difícil de ser percibido a tiempo, para que podamos actuar de forma adecuada. Su forma exterior es casi siempre un triángulo equilátero con fondo blanco y borde rojo.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="generales">Señales de indicaciones generales</h3>
+        <h5 class="subtitle">Las señales de indicación general facilitan información que puede ser de utilidad.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="servicios">Señales de servicios</h3>
+        <h5 class="subtitle">Las señales turísticas y de servicios informan de la existencia de un servicio o un lugar de interés turístico y/o recreativo.</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+      <div>
+        <h3 class="title is-3" id="obra">Señales de obras</h3>
+        <h5 class="subtitle">Las señales de tráfico de obras son señales similares al resto, con fondo amarillo, utilizadas para señalizar desvíos o cambios provisionales debido a obras. Pueden ser de varios tipos:</h5>
+        <!-- aquí van imagenes con sus textos -->
+        <br>
+        <br>
+      </div>
+    </div>
+    <!--Aquí empieza el footer, aunque es obvio, me gusta poner el comentario porque así es más fácil de localizar-->
+    <footer>
+        <div class="footer content has-text-centered columns">
+            <div class="column">
+                <h6>EMPRESA</h6>
+                <p><a href="#" alt="Empresa" title="Empresa">Empresa</a></p>
+                <p><a href="#" alt="Trabaja Con Nosotros" title="Trabaja Con Nosotros">Trabaja Con Nosotros</a></p>
+                <p><a href="#" alt="Newsletter" title="Newsletter">Newsletter</a></p>
+                <p><a href="#" alt="App" title="App">App</a></p>
+            </div>
+            <div class="column">
+                <h6>POLÍTICAS</h6>
+                <p><a href="#" alt="Términos & Condiciones" title="Términos & Condiciones">Términos & Condiciones</a></p>
+                <p><a href="#" alt="Política De Privacidad" title="Política De Privacidad">Política De Privacidad</a></p>
+                <p><a href="#" alt="Política De Cookies" title="Política De Cookies">Política De Cookies</a></p>
+            </div>
+            <div class="column">
+                <h6>CONTACTO</h6>
+                <a href="tel:+34XXXXXXXXX" alt="Teléfono" title="Teléfono"><img class="image is-24x24 contacto" src="svg/contacto/telefono.svg" alt="Teléfono"></a>
+                <a href="mailto:señales@noexiste.org" alt="Email" title="Email"><img class="image is-24x24 contacto" src="svg/contacto/email.svg" alt="Email"></a>
+                <a href="https://wa.me/+34XXXXXXXXX" alt="Whatsapp" title="Whatsapp"><img class="image is-24x24 contacto" src="svg/contacto/whatsapp.svg" alt="Contacto"></a>
+            </div>
+        </div>
+        <div id="copy">
+            <p>&copy;Todos los derechos reservados.</p>
+        </div>
+    </footer>
+  </body>
+</html>

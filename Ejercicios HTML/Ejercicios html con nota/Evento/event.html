@@ -3,39 +3,72 @@
     <head>
         <meta charset="utf-8">
         <title>Evento</title>
-        <style> body{background-color: #DDDCE0;} </style>
+        <style> body{background-color: #DDDCE0;}</style> <!--He intentado hacerlo lo más responsive posible con los medios que conozco actualmente-->
     </head>
     <body>
-        <div> 
-            <img src="Images\ChessRevolutionLogo.svg" alt="Logo de Chess Revolution" 
-            style="margin-left: 1%; width: 20%; margin-top: -2%">
-            <h1 style="text-align:center; margin-top:-14%; font-size: 350%;">Chess Revolution:<br>El evento</h1>
-            <h2 style="text-align: right; margin-right: 3%; margin-top: -9%;">Nuestras redes sociales:<br>
-                <a href="https://thetravelergames.com/">Nuestra web</a> <br>
-                <a href="https://twitter.com/thetravelergame">Twitter</a> <br>
-                <a href="https://www.reddit.com/user/thetravelergames/">Reddit</a>
-            </h2>
-        </div>
-        <div style="margin-top: 8%; margin-left: 5%; margin-bottom: 5%;"> 
-            <button style="border-style: solid; color: black; text-align: center; width: 10%; 
-            margin-left: 10%; padding-top: 1%; padding-bottom: 1%; font-size: 150%;">Botón</button>
-            <button style="border-style: solid; color: black; text-align: center; width: 10%; 
-            margin-left: 10%; padding-top: 1%; padding-bottom: 1%; font-size: 150%;">Botón</button>
-            <button style="border-style: solid; color: black; text-align: center; width: 10%; 
-            margin-left: 10%; padding-top: 1%; padding-bottom: 1%; font-size: 150%;">Botón</button>
-            <button style="border-style: solid; color: black; text-align: center; width: 10%; 
-            margin-left: 10%; padding-top: 1%; padding-bottom: 1%; font-size: 150%;">Botón</button>
-        </div>
-        <div>
-            <div style="width: 70%; background-color: bisque; float: left;">
-                <p>patata</p>
+        <div class="leftColumn">
+            <div> 
+                <img src="Images\ChessRevolutionLogo.svg" alt="Logo de Chess Revolution" 
+                style="margin-left: 1%; width: 20%; margin-top: -2%">
+                <h1 style="text-align:center; margin-top:-14%; font-size: 400%;">Chess Revolution:<br>El 
+                evento</h1>
+                <h2 style="text-align: right; margin-right: 3%; margin-top: -10%;">Nuestras redes sociales:<br>
+                    <a href="https://thetravelergames.com/">Nuestra web</a> <br>
+                    <a href="https://twitter.com/thetravelergame">Twitter</a> <br>
+                    <a href="https://www.reddit.com/user/thetravelergames/">Reddit</a>
+                </h2>
             </div>
-            <div style="width: 30%; background-color: aqua; float: right;">
-                <p>patata</p>
+            <div style="margin-top: 8%; margin-left: 5%; margin-bottom: 5%;"> <!--Los botones son estéticos, no llevan a ningún lado-->
+                <button style="border-style: solid; color: black; text-align: center; width: 10%; 
+                margin-left: 10%; padding-top: 1%; padding-bottom: 1%; font-size: 150%;">Botón</button>
+                <button style="border-style: solid; color: black; text-align: center; width: 10%; 
+                margin-left: 10%; padding-top: 1%; padding-bottom: 1%; font-size: 150%;">Botón</button>
+                <button style="border-style: solid; color: black; text-align: center; width: 10%; 
+                margin-left: 10%; padding-top: 1%; padding-bottom: 1%; font-size: 150%;">Botón</button>
+                <button style="border-style: solid; color: black; text-align: center; width: 10%; 
+                margin-left: 10%; padding-top: 1%; padding-bottom: 1%; font-size: 150%;">Botón</button>
+            </div>
+        </div>
+        <div class="rightColumn">
+            <div style="width: 70%; float: left; padding-bottom: 2%;">
+                <h2 style="text-align: center; font-size: 200%; margin-top: 5%;">¡Enhorabuena por pertenecer a la 
+                revolución!</h2>
+                <img src="Images\ChessRevolutionPortada.jpg" alt="Imagen de la portada de Chess Revolution"
+                style="margin-left: 20%; margin-top: 4%;">
+                <p style="text-align: justify; margin-left: 5%; font-size: 120%; margin-top: 5%;">El próximo viernes 
+                por la tarde, a las 18:00 organizaremos un evento en Polo Digital (Málaga).<br>
+                Estaremos con nuestra nueva demo, y podréis probarala. Anunciaremos también, junto a 
+                nuestro publisher, la fecha de estreno.</p><br>
+                <h3 style="margin-left: 5%; margin-bottom: -2%;">Ubicación:</h3>
+                <img src="Images/ubicacionPolo.png" alt="Ubicación de Polo Digital" 
+                style="scale: 80%; margin-top: -2%; margin-left: 3%;">
+                <p style="margin-top: -4%; margin-left: 3%;">El Polo Digital se ubica en avenida Sor Teresa Prat, 15 (Málaga). 
+                En el antiguo edificio de la Tabacalera.</p>
+                <p style="margin-left: 3%;">Para mas información del lugar: <a href="https://www.polodigital.eu/">Polo digital</a></p> 
+            </div>
+            <div style="width: 25%; float: right; margin-top: 5%; margin-right: 2%;"> <!--Nótese que no sabia qué poner en todo el div-->
+                <div style="margin-bottom: 5%; margin-left: 2%;">
+                    <h2>Chess Revolution: El juego</h2>
+                    <p style="margin-right: 1%;">Chess Revolution, la revolución del ajedrez.<br>
+                    Ha tenido gran acogida en las convenciones en España de juegos inides.</p>
+                    <a style="margin-left: 2%;" href="noticia.html">(Ir a la nocicia)</a>
+                </div>
+                <hr>
+                <div style="margin-top: 5%; margin-bottom: 5%; text-align: center">
+                    <p style="scale: 120%; margin-bottom: 5%;">¡No compres, adopta!</p>
+                    <img src="Images/gato.png" alt="Imagen de un gato, anuncio para adotar animales.">
+                </div>
+                <hr>
+                <div style="margin-left: 2%; margin-bottom: 5%;">
+                    <h3>Sobre mi:</h3>
+                    <p>¡Hola! <br> Soy Sara, soy artista 3D y he desarrollado el arte 3D de 
+                    Chess Revolution. <br> Me hace muy feliz sacar el primer videojuego en el que participo al mercado.</p>
+                </div>
             </div>
         </div>  
     </body>
     <footer>
-        <p style="text-align: left, end; margin-top: 10%">Copyright 2024</p>
-    </footer>
+        <p style="text-align: left, end; margin-top: 90%; margin-left: 5%">Copyright 2024</p>
+        <p style="text-align: right; margin-right: 2%; margin-bottom: 5%;">Hecho por Sara Quijada Santamaria <br>17/5/2024</p>
+    </footer> <!--Los estilos todavía no los tengo muy pillados, es mi segundo ejercicio con estilos sin un css-->
 </html>

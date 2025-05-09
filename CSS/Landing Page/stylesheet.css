@@ -1,0 +1,107 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Satisfy - Regular";
+    src: url(Fonts/Satisfy-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Delius - Regular";
+    src: url(Fonts/Delius-Regular.ttf);
+}
+
+.header {
+    height: 200px;
+    border-bottom: #FC4F9A solid;
+    width: 100%;
+}
+
+.buttons {
+    background-color: #FC4F9A;
+    font-family: "Delius - Regular", cursive;
+    border-radius: 5%;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 10px;
+}
+
+.mainBody {
+    background-color: rgb(209, 209, 169);
+    width: 100%;
+    padding-top: 1%;
+}
+
+.mainBody-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainBody-left{
+    background-color: white;
+    width: 35%;
+    border-radius: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding: 10px 0;
+}
+
+.titulo {
+    font-family: "Satisfy - Regular", cursive;
+    text-align: center;
+    font-size: 100px;
+    margin-right: 20%;
+}
+
+.foto-animales-contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.foto-animales{
+    display: block;
+}
+
+.description-text {
+    font-family: "Delius - Regular", cursive;
+    font-weight: normal;
+    font-size: 20px;
+    margin-left: 5%;
+}
+
+.form {
+    font-family: "Delius - Regular", cursive;
+    background-color: white;
+    border-radius: 5%;
+    margin-right: 4%;
+    width: 20%;
+    height: 650px;
+    text-align: center;
+}
+
+.footer {
+    background-color: white;
+    border-top: #FC4F9A solid;
+    font-family: "Delius - Regular", cursive;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-footer{
+    text-align: left;
+    padding: 16px 35px;
+    margin: 2.5px;
+}
+
+.right-footer{
+    text-align: right;
+    padding: 16px 35px;
+    margin-top: 1%;
+}
